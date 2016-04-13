@@ -1,0 +1,698 @@
+/**********
+GENERAL
+**********/
+
+/*** main styles ***/
+
+body {
+	background-color: black;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Helvetica Neue", sans-serif;
+	letter-spacing: .2px;
+	font-weight: 200;
+	color: #a0a0a0;
+}
+
+h2, h3 {
+	font-weight: normal;
+	color: #4b5a65;
+}
+
+p {
+	line-height: 1.6em;
+}
+
+.lead {
+	color: #dcdcdc;
+}
+
+#wrapper {
+	width: 1200px;
+	max-width: 100%;
+	margin: auto;
+}
+
+/*** links ***/
+
+a {
+	text-decoration: none;
+	color: white;
+	letter-spacing: 1px;
+}
+
+a:hover {
+	color: #469dd1;
+}
+
+/*** logo ***/
+
+#logo {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+#logo h1 {
+	font-family: 'Pacifico', cursive;
+	color: white;
+	letter-spacing: 1.2px;
+	padding-left: 16%;
+	margin: 5px 0 55px 0;
+}
+
+/*** nav ***/
+
+nav {
+	width: 50%;
+	font-size: .875em;
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+}
+
+nav ul {
+	max-width: 100%;
+	margin: 0;
+	padding: 0 0 0 20%;
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+	margin: 0 2%;
+}
+
+nav li a {
+	padding: 5px 17px;
+	color: white;
+}
+
+.selected {
+	background-color: #3B444C;
+	background: -webkit-linear-gradient(#384248, #46525a); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#384248, #46525a); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#384248, #46525a); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#384248, #46525a); /* Standard syntax */
+	border-radius: 15px;
+	-webkit-box-shadow: inset -0px 1px 1px .5px #282834;
+	-moz-box-shadow: inset -0px 1px 1px .5px #282834;
+	box-shadow: inset -0px 1px 1px .5px #282834;
+}
+
+/*** buttons ***/
+
+.btn {
+	padding: 13px 46px;
+	text-shadow: 1px 0px 0px black;
+	background-color: #469dd1;
+	background-image: -webkit-linear-gradient(top, #469dd1, #1473c6);
+  background-image: -moz-linear-gradient(top, #469dd1, #1473c6);
+  background-image: -ms-linear-gradient(top, #469dd1, #1473c6);
+  background-image: -o-linear-gradient(top, #469dd1, #1473c6);
+  background-image: linear-gradient(to bottom, #469dd1, #1473c6);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 1px 3px 2px 2px rgba(46, 43, 43, .6);
+  -moz-box-shadow: 1px 3px 2px 2px rgba(46, 43, 43, .6);
+  box-shadow: 1px 3px 2px 2px rgba(46, 43, 43, .6);
+	border-radius: 25px;
+	font-size: .875em;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #007fc8);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #007fc8);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #007fc8);
+  background-image: -o-linear-gradient(top, #3cb0fd, #007fc8);
+  background-image: linear-gradient(to bottom, #3cb0fd, #007fc8);
+  color: white;
+}
+
+/*** main body ***/
+
+#main-body {
+	
+	/*subtle gradient from off white on top to white on bottom*/
+	background: #fff;
+	background: -webkit-linear-gradient(bottom, #fff, #f2f2f2);
+	background: -o-linear-gradient(bottom, #fff, #f2f2f2);
+	background: : -moz-linear-gradient(bottom, #fff, #f2f2f2);
+	background: linear-gradient(to top, #fff, #f2f2f2);
+	
+	padding-bottom: 65px;
+}
+
+#main-body a {
+	color: #469dd1;
+}
+
+#main-body a:hover {
+	text-decoration: underline;
+}
+
+/*** footer ***/
+
+footer {
+	background-color: white;
+	font-size: .813em;
+	color: #8a8a8a;
+}
+
+footer p {
+	margin: 0;
+}
+
+#footer-content {
+	max-width: 85%;
+	margin: auto;
+	padding: 15px 0 30px 0;
+	border-top: 1px solid #e8e8e8;
+}
+
+#copyright {
+	display: inline-block;
+	float: left;
+	margin-top: 2px;
+}
+
+#social-links {
+	margin: 0;
+	display: inline-block;
+	float: right;
+	list-style: none;
+}
+
+#social-links li {
+	margin-left: 12px;
+	display: inline-block;
+	float: left;
+}
+
+/*** "Micros Clearfix Hack" - Nicolas Gallagher ***/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+
+
+/**********
+HOME
+**********/
+
+#main-head {
+	padding-top: 30px;
+	background-color: #4D5C67;
+	background-image: url("../img/blue_bg.png");
+}
+
+#jumbotron {
+	max-width: 100%;
+	margin: auto;
+	clear: left;
+}
+
+#hero-image {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+#hero-image img {
+	width: 65%;
+	height: auto;
+	margin-left: 15%;
+	position: relative;
+	top: 3px;
+}
+
+/*** intro ***/
+
+#intro {
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+#intro-text {
+	display: inline-block;
+	float: left;
+	padding: 0 90px 0 0;
+}
+
+#intro-text h1 {
+	color: white;
+	font-size: 48px;
+	font-weight: bold;
+	margin: 60px 0 0 0;
+}
+
+#intro-text p {
+	margin: 10px 0px 5px 0;
+}
+
+/*** call to action ***/
+
+#cta {
+	display: inline-block;
+	float: left;
+	padding: 52px 0 0 0;
+}
+
+#cta p {
+	display: inline;
+	margin: 0 15px 0 20px;
+}
+
+/*** recent work ***/
+
+#recent-work {
+	background: url("../img/comp-icon.png") no-repeat;
+	background-size: 16px 12px;
+	background-position: 0 4px;
+	display: inline-block;
+	text-decoration: underline;
+	padding-left: 25px;
+}
+
+/*** company links ***/
+
+#company-links {
+	background-color: #ebebeb;
+	background-image: url("../img/company_bg.png");
+	max-width: 100%;
+	height: 57px;
+	padding: 18px 0 0 0;
+	border-bottom: 1px solid #c3c3c3;
+	clear: left;
+}
+
+#company-links ul {
+	margin: 0;
+	padding: 0;
+}
+
+#company-links li {
+	display: inline-block;
+	list-style: none;
+	padding: 0 5% 0 7.5%;
+}
+
+#company-links img {
+	height: 42px;
+}
+
+/*** blurbs ***/
+
+#blurbs {
+	max-width: 85%;
+	margin: auto;
+	padding: 95px 0 0 0;
+}
+
+.blurb {
+	width: 33.3%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	font-size: .813em;
+}
+
+.blurb h2 {
+	margin-top: 30px;
+}
+
+.blurb p {
+	margin: 10px 0 37px 0;
+	padding: 0 15px;
+}
+
+.read-more-btn {
+	padding: 12px 23px;
+	border-radius: 3px;
+	box-shadow: none;
+}
+
+#blurbs a {
+		color: white;
+}
+
+#blurbs a:hover {
+	text-decoration: none;
+}
+
+/*** projects ***/
+
+#projects {
+	max-width: 85%;
+	margin: auto;
+	margin-top: 100px;
+	font-size: .813em;
+	clear: left;
+}
+
+#projects h2 {
+	margin-left: 10px;
+	padding-left: 35px;
+	background: url("../img/green_icon.png") no-repeat;
+}
+
+.project-img {
+	border: 4px solid white;
+	margin: 10px;
+	width: 217px;
+	-webkit-box-shadow: -0px 1px 1px .5px rgba(46, 43, 43, .4);
+	box-shadow: -0px 1px 1px .5px rgba(46, 43, 43, .4);
+}
+
+.projects-carousel {
+	text-align: center;
+}
+
+.projects-carousel-small {
+	display: none !important;
+}
+
+/*** blog and twitter ***/
+
+#blog-and-twitter {
+	max-width: 85%;
+	margin: 100px auto 0;
+	font-size: .813em;
+}
+
+#blog-placeholder {
+	width: 60%;
+	display: inline-block;
+	float: left;
+}
+
+#blog-placeholder h2 {
+	margin-left: 2px;
+	padding: 2px 0px 2px 30px;
+	background: url("../img/blog_icon.png") no-repeat;
+	background-position: 0 4px;
+}
+
+#blog-placeholder h3 {
+	margin: 0;
+	color: #808080;
+}
+
+#blog-placeholder p {
+	margin: 5px 20px 5px 0;
+	line-height: 1.8em;
+}
+
+#blog-placeholder span {
+	display: block;
+	font-size: smaller;
+	color: #d9d9d9;
+}
+
+.blog {
+	padding: 18px 30px 5px 0;
+	display: inline-block;
+	float: left;
+}
+
+.blog img{
+	max-width: 140px;
+	border: 4px solid white;
+	display: inline-block;
+	float: left;
+	margin-right: 6%;
+	-webkit-box-shadow: -0px 1px 1px .5px rgba(46, 43, 43, .4);
+	box-shadow: -0px 1px 1px .5px rgba(46, 43, 43, .4);
+}
+
+.blog-text {
+	max-width: 63%;
+	margin-bottom: 7px;
+	display: inline-block;
+	float: left;
+}
+
+#twitter-section {
+	width: 38%;
+	padding-right: 2%;
+	display: inline-block;
+	float: left;
+}
+
+#twitter-section h2 {
+	margin-left: 2px;
+	background: url("../img/twitter_icon_1.png") no-repeat;
+	background-position: 0 4px;
+	padding: 2px 0px 2px 30px;
+}
+
+.twitter-timeline {
+	margin: 10px 0 15px 0;
+	font-size: .813em;
+}
+
+/**********
+MEDIA QUERIES
+**********/
+
+/*** phones up to 768px ***/
+
+@media screen and (max-width: 768px) {
+	
+	#main-body {
+		padding-bottom: 10px;
+	}
+	
+	#logo h1 {
+		padding: 0 20px;
+		margin-top: 0;
+	}
+	
+	nav {
+		float: right;
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	
+	nav ul {
+		float: right;
+	}
+	
+	nav li {
+		display: block;
+		float: none;
+		margin: 10px;
+	}
+	
+	#hero-image {
+		width: 100%;
+	}
+	
+	#hero-image img {
+		width: 250px;
+		max-width: 60%;
+		display: block;
+		margin: 0 0 0 20px;
+		padding: 0;
+		position: relative;
+		top: -20px;
+	}
+
+	#intro {
+		width: 100%;
+		font-size: 14px;
+	}
+	
+	#intro-text {
+		padding: 0 20px;
+		margin: auto;
+	}
+	
+	#intro-text h1 {
+		margin-top: 15px;
+		font-size: 28px;
+	}
+	
+	#cta {
+		width: 96%;
+		margin: 0;
+		padding: 40px 0 40px 4%;
+	}
+	
+	#cta p, #recent-work {
+		display: none;
+	}
+	
+	#company-links {
+		display: none;
+	}
+	
+	#blurbs {
+		padding-top: 20px;
+	}
+	
+	.blurb {
+		width: 100%;
+		max-width: 400px;
+		padding: 30px 0;
+		display: block;
+		float: none;
+		margin: auto;
+	}
+	
+	#projects {
+		display: none;
+	}
+	
+	.projects-carousel {
+		display: none !important;
+	}
+	
+	.projects-carousel-small {
+		display: block !important;
+	}
+	
+	#blog-and-twitter {
+		max-width: 100%;
+		padding-left: 20px;
+		margin-top: 50px;
+	}
+	
+	#blog-placeholder {
+		width: 100%
+	}
+	
+	#blog-placeholder img {
+		margin-bottom: 20px;
+	}
+	
+	.blog {
+		width: 100%;
+		padding-right: 0;
+	}
+	
+	.blog-text {
+		max-width: 100%;
+		max-width: 400px;
+	}
+	
+	#twitter-section {
+		width: 90%;
+		margin: 50px 0;
+	}
+	
+	#social-links {
+		float: left;
+		clear: left;
+		padding: 20px 0 0 0;
+		margin: 0;
+	}
+	
+	#social-links li:first-child {
+		margin-left: 0;
+	}
+    
+}
+
+/*** tablets 768px to 1104px ***/
+
+
+@media screen and (min-width: 769px) and (max-width: 1104px) {
+	
+		#logo h1 {
+			padding: 0 20px;
+			margin-top: 0;
+		}
+		
+    nav ul {
+	    padding: 0;
+    }
+    
+    #hero-image {
+			width: 35%;
+		}
+		
+		#hero-image img {
+			width: 80%;
+			display: block;
+			margin: 0 0 0 80px;
+			padding-left: 20px;
+			margin: 0;
+			position: inherit;
+		}
+		
+		#intro {
+			width: 65%;
+		}
+		
+		#intro-text {
+			padding: 0 10px 0 20px;
+			margin: auto;
+		}
+		
+		#intro-text h1 {
+			margin-top: 15px;
+		}
+		
+		#cta {
+			width: 95%;
+			margin: 0;
+			padding: 40px 0 40px 20px;
+		}
+		
+		#company-links ul {
+			text-align: center;
+		}
+		
+		#company-links li {
+			padding: 0 5% 0 5%;
+		}
+		
+		#blog-placeholder {
+			width: 50%;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#blog-placeholder h3 {
+			margin-top: 20px;
+		}
+		
+		.blog:nth-of-type(2) {
+			display: none;
+		}
+		
+		.blog-text {
+			max-width: 100%;
+		}
+		
+		#twitter-section {
+			width: 50%;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#twitter-feed {
+			width: 100%;
+		}
+}
+
+
+
+
+
